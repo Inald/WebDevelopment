@@ -7,6 +7,37 @@ Most recent revision: 07/07/2020
 <html lang = "en">
     <head>
         <title>Inald's Portfolio</title>
+        <link href="cssSheets/testStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+        .caption{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        table, th, td{
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+
+        table{
+            width: 90%;
+            margin: auto;
+        }
+
+        tr{
+            height: 30px;
+        }
+
+        th{
+            background-color: #546a7b;
+            color: #f2eded;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e4c3ad; 
+        }
+        </style>
     </head>
     <body>
         <header>
@@ -18,33 +49,37 @@ Most recent revision: 07/07/2020
             testimonials.html
         -->
         
-            <nav>
+            <nav class = "border">
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonial.html">Testimonials</a></p> 
                 <a href="https://www.google.com">Google</a> 
                 </hr>
+                <hr style = "width: 50%; border: 2px solid blueviolet;"/>
             </nav>
-        <hr/>
         <section>
-            <article id = "about-me">
+            <article class = "border" id = "about-me">
                 <h2><em>About Me</em></h2>
-                <img src="images/InaldGjoniImg.png", width = 300px, height = 300px, alt = "Portrait of Inald Gjoni" />
+                <img src="images/InaldGjoniImg.png", width = 300px, height = 300px, alt = "Portrait of Inald Gjoni" style = "float:left;" />
                     <p>
                         I am 20 years old currently entering my <strong>final year</strong> at the
                         University of Nottingham to finish my degree in Computer
                         Science.
                     </p>
             </article>
-            <article id = "PE">
+            <br/>
+            <article id = "PE" style = "clear:both">
                 <h2><em>Past Experiences</em></h2>
                 <table>
                     <caption>Employment History</caption>
-                    <tr>
-                        <th>Years of Employment</th>
-                        <th>Title</th>
-                        <th>Company</th>
-                    </tr>
+                    <thread>
+                        <tr>
+                            <th>Years of Employment</th>
+                            <th>Title</th>
+                            <th>Company</th>
+                        </tr>
+                    </thread>
+                    <tbody>
                     <tr> 
                         <td>2014-present</td> 
                         <td>Waiter/Barman</td> 
@@ -60,6 +95,7 @@ Most recent revision: 07/07/2020
                         <td>Intern</td> 
                         <td>mthree Internship at NatWest Markets</td> 
                     </tr>
+                    </tbody>
                 </table>
                     <p>
                         Worked as a  <span style="background-color: lightblue;"> waiter/bartender for 6 years at Reigate Manor
@@ -95,7 +131,7 @@ Most recent revision: 07/07/2020
                 </article>
            </section>
         <footer> 
-            <hr />
+            <hr/>
             <p>&copy; 2020 Inald Gjoni. All rights reserved.</p>
        </footer>
     </body>
