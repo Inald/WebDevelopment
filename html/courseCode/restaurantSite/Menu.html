@@ -2,12 +2,92 @@
 <html>
     <head>
         <title>Gjoni's Cuisine Menu</title>
+        <style>
+            body{
+                max-width: 900px;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .caption{
+                font-weight: bold;
+                font-size: 1.2em;
+            }   
+
+            #mainHead{
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #0d1f2d;
+                
+            }
+
+            .clear-float {
+                clear:both;
+            }
+
+            nav {
+                border-top: 3px solid #e4c3ad;
+                border-bottom: 3px solid #e4c3ad;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            nav a {
+                background-color: #0c323d;
+                color: #fef9ff;
+                padding: 8px;
+                border: thin solid #0d1f2d;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                margin: 20px;
+                width: 100px;
+                
+            }
+
+            nav a:hover{
+                background-color: #fef9ff;
+                color: #5b7d87;
+            }
+
+            nav a:visited {
+                color: #e4c3ad; 
+            }
+
+            h3{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #0c323d;
+                max-width: 900px;
+                margin: 0 auto;
+                font-size: 35px
+            }
+
+            .meals{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #cf7c44;
+            }
+            
+
+            header, footer{
+                text-align: center;
+                background-color: #e4c3ad;
+                padding: 30px 10px 20px 10px;
+                
+            }
+
+            footer{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Gjoni's Cuisine</h1>
+            <h1 id = "mainHead">Gjoni's Cuisine</h1>
         </header>
-        <hr/>
         <!--
             need to add links to projects.html, contact.html and 
             testimonials.html
@@ -16,11 +96,11 @@
             <nav class = "border">
                 <p><a href="index.html">Home</a></p>
                 <p><a href="contactMe.html">Contact Us</a></p>
-                <p><a href="Menu.html">Menu</a></p> 
-                <hr/>
+                <p><a href="Menu.html">Menu</a></p>
+                </hr>
             </nav>
             <section>
-                <article id = "Meal 1">
+                <article id = "Meal1" class = "meals">
                     <h3>Burgers and Fries</h3>
                         An American Classic!<br/>Your choice - with or without<br/>
                         cheese, pickle, onion, tomato, and lettuce<br/>Served with
@@ -28,21 +108,21 @@
                         $7.95
                     </p>
                 </article>
-                <article id = "Meal 2">
+                <article id = "Meal2" class = "meals">
                     <h3>Hot Dog and Chips</h3>
                         A Summer Classic!<br/>Your choice - white or wheat bun<br/>
                         Relish, mustard and ketchup<br/>Served with our house-made chips<br/>
                         $7.95
                     </p>
                 </article>
-                <article id = "Meal 3">
+                <article id = "Meal3" class = "meals">
                     <h3>Italian Sausage and Peppers</h3>
                        An All-Time Favourite!<br/>Your choice - mild or spicy
                        Cole slaw<br/>Served with garlic mashers<br/>
                        $10.95
                     </p>
                 </article>
-                <article id = "Meal 4">
+                <article id = "Meal4" class = "meals">
                     <h3>Tenderlain Sandwich and Chips</h3>
                        Really Hits the Spot!<br/>
                        plain or Sesame Seed Bun<br/>Pickle, onion,
@@ -50,7 +130,7 @@
                        $8.95
                     </p>
                 </article>
-                <article id = "Meal 5">
+                <article id = "Meal5" class = "meals">
                     <h3>House Salad</h3>
                        On the Lighter Side<br/>
                        Your choice - with or without cheese<br/>Iceberg lettuce tomatoes,
@@ -59,7 +139,7 @@
                        $6.95
                     </p>
                 </article>
-                <article id = "Meal 6">
+                <article id = "Meal6" class = "meals">
                     <h3>Brisket Sandwich and Fries</h3>
                        A Taste of Texas!
                        Smoked Brisket on Thick-cut<br/>
