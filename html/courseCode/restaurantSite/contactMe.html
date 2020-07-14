@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <!--
+
+    <link href="cssSheets/testStyles.css" rel="stylesheet" type="text/css" />
+    -->
+    <body>
+        <nav class = "border">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="contactMe.html">Contact Us</a></p>
+            <p><a href="Menu.html">Menu</a></p> 
+            <hr/>
+        </nav>
+
+        <form action="submit.html" method="POST"> 
+        <section>
+            
+            <article id = "firstname">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName"> <br />
+            </article>
+            <br/>
+            <article id = "email">
+                <label for="email">Email:</label>
+                <input type="text" id="Email" name="Email"> <br />
+            </article>
+            <br/>
+            <article id = "phoneNum">
+                <label for="phoneNumber">Phone number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber"> <br />
+            </article>
+            <br/>
+            <article id = "RFI">
+                <label for = "RFI">Reason for Inquiry:</label>
+                <select id = "RFI", name = "RFI">
+                    <option value="Catering">Catering</option>
+                    <option value="Private Party">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </article>
+            <br/>
+            <article id = "questionnaireFill">
+                <fieldset>
+                    <legend>Have you been to the restaurant?</legend><br />
+                    <input type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label for="choice1">Yes</label><br />
+                    <input type="radio" id="choice2" name="questionnaire" value="no">
+                    <label for="choice2">No</label><br />
+                    </fieldset>
+            </article>
+            <article id = "BestContactDays">
+                <fieldset>
+                    <legend>Best time to contact you</legend><br/>
+                    <input type = "checkbox" id = "Monday" name = "Monday" value = "Monday">
+                    <label for = "Monday">M</label><br/>
+                    <input type = "checkbox" id = "Tuesday" name = "Tuesday" value = "Tuesday">
+                    <label for = "Tuesday">T</label><br/>
+                    <input type = "checkbox" id = "Wednesday" name = "Wednesday" value = "Wednesday">
+                    <label for = "Wednesday">W</label><br/>
+                    <input type = "checkbox" id = "Thursday" name = "Thursday" value = "Thursday">
+                    <label for = "Thursday">T</label><br/>
+                    <input type = "checkbox" id = "Friday" name = "Friday" value = "Friday">
+                    <label for = "Friday">F</label><br/>                    
+                </fieldset>
+            </article>
+            <article id = "addInfo">
+                <label for="info">Additional Information</label><br />
+                <textarea id="info" name="info"></textarea><br />
+            </article>
+            <br/>
+            <input type="submit" name="submit" value="Send Request">
+        </section>
+    </body>
+</html>
