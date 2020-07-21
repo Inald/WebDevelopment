@@ -84,6 +84,31 @@
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-align: center;
             }
+
+            table, th, td{
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+            }
+
+            table{
+                width: 90%;
+                margin: auto;
+            }
+
+            tr{
+                height: 30px;
+            }
+
+            th{
+                background-color: #0d1f2d;
+                color: #f2eded;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #e4c3ad; 
+            }
+
         </style>
     </head>
     <body>
@@ -151,6 +176,36 @@
                        french fries
                        $7.95
                     </p>
+                </article>
+                <article id = "Drinks" style = "clear:both">
+                    <h3><em>Beverages</em></h3>
+                    <table>
+                        <thread>
+                            <tr>
+                                <th>Beverage</th>
+                                <th>Price</th>
+                            </tr>
+                        </thread>
+                        <tbody>
+                        <tr> 
+                            <td>Root Beer</td> 
+                            <td>$3.00</td> 
+                        </tr>
+                        <tr> 
+                            <td>Bottled Water</td> 
+                            <td>$1.25</td> 
+                        </tr>
+                        <tr> 
+                            <td>Lemonade</td> 
+                            <td>$1.00</td>
+                        </tr>
+                        <tr> 
+                            <td>Iced Tea</td> 
+                            <td>$1.25</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </br>
                 </article>
             </section>
             
