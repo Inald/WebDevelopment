@@ -3,7 +3,9 @@ body{
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #0d1f2d;
-    background-color: rgb(194, 180, 180);;
+    background-color: rgb(194, 180, 180);
+    text-align: center;
+    align-items: center;
 }
 
 #mainHead1{
@@ -55,26 +57,3 @@ footer{
     text-align: center;
 }
 
-table, th, td{
-    border: 1px solid #0d1f2d;
-    border-collapse: collapse;
-    padding: 5px 10px;
-}
-
-table{
-    width: 90%;
-    margin: auto;
-}
-
-tr{
-    height: 30px;
-}
-
-th{
-    background-color: #546a7b;
-    color: #f2eded;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #e4c3ad; 
-}
