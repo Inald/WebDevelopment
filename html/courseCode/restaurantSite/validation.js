@@ -21,6 +21,11 @@ function validatePhone(field){
     return "";
 }
 
+function loadIn(){
+    window.alert("This page works better with javascript activated.")
+}
+
+
 
 function validateSubmit(form){
     fail = validateName(form.firstName.value);
