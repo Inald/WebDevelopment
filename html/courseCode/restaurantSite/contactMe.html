@@ -99,12 +99,13 @@
         }
     </style>
     <body>
+        <script src="validation.js"></script>
         <nav class = "border">
             <p><a href="index.html">Home</a></p>
             <p><a href="contactMe.html">Contact Us</a></p>
             <p><a href="Menu.html">Menu</a></p> 
         </nav>
-        <form action="submit.html" method="POST"> 
+        <form action="submit.html" method="POST" onsubmit= "return validateSubmit(this)"> 
         <section>
             
             <article id = "firstname">
